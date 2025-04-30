@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ADH PRODUCTIONS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #fff;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    /* Header & Footer banner containers */
+    header, footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+    }
+    .top-banner {
+      max-width: 30%;   /* adjust for desired width */
+      height: auto;
+      margin: 2rem auto;
+    }
+    .bottom-banner {
+      max-width: 10%;    /* smaller bottom banner */
+      height: auto;
+      margin: 2rem auto;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 4vw;
+    }
+
+    .catalogue {
+      width: 100%;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: center;
+      padding: 0.5rem 2vw;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      border-bottom: 1px solid;
+    }
+
+    .black {
+      background: #000;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .white {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+    }
+
+    .black:hover {
+      background: #fff !important;
+      color: #000 !important;
+      border-color: #000 !important;
+    }
+
+    .white:hover {
+      background: #000 !important;
+      color: #fff !important;
+      border-color: #fff !important;
+    }
+
+    .artist, .title, .format {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .title  { justify-content: center; }
+    .format { justify-content: flex-end; }
+    .char   { display: inline-block; }
+
+    /* Center-row overrides */
+    .center-row .artist,
+    .center-row .format {
+      display: none;
+    }
+    .center-row .title {
+      grid-column: 1 / -1;
+      justify-content: center !important;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top banner -->
+  <header>
+    <img src="/Users/man/Desktop/banner.png" alt="Top Banner" class="top-banner">
+  </header>
+
+  <main>
+    <div class="catalogue" id="catalogue">
+      <div class="row"><div class="artist" data-text="cohabitant"></div><div class="title" data-text="Οδύσσεια"></div><div class="format" data-text="LP"></div></div>
+      <div class="row"><div class="artist" data-text="F-DORM"></div><div class="title" data-text="1647-1734–1969-2458"></div><div class="format" data-text="Cassette, Reissue"></div></div>
+      <div class="row"><div class="artist" data-text="litüus"></div><div class="title" data-text="/415056398488350070364436013594995002254341726609502173907190."></div><div class="format" data-text="Cassette, Reissue"></div></div>
+      <div class="row"><div class="artist" data-text="cc"></div><div class="title" data-text="P.E.O.P.L.E. / ALTERNATIVE LIFESTYLES"></div><div class="format" data-text="CD"></div></div>
+      <div class="row"><div class="artist" data-text="Scab World"></div><div class="title" data-text="P.E.O.P.L.E."></div><div class="format" data-text="CD / book"></div></div>
+      <div class="row"><div class="artist" data-text="Guido Gamboa"></div><div class="title" data-text="All Is Not Coherent in Nature: Polystudies for Algorithm & Electric Guitar Pentiments / P.E.O.P.L.E."></div><div class="format" data-text="LP / book"></div></div>
+      <div class="row"><div class="artist" data-text="litüus"></div><div class="title" data-text="forever"></div><div class="format" data-text="LP"></div></div>
+      <div class="row"><div class="artist" data-text="[..(].:"></div><div class="title" data-text="–"></div><div class="format" data-text="CD"></div></div>
+      <div class="row"><div class="artist" data-text="litüus"></div><div class="title" data-text="1218201604172017"></div><div class="format" data-text="CD"></div></div>
+      <div class="row"><div class="artist" data-text="Dear, Master [...]"></div><div class="title" data-text="–"></div><div class="format" data-text="Cassette"></div></div>
+      <div class="row"><div class="artist" data-text="labile mundi"></div><div class="title" data-text="–"></div><div class="format" data-text="Cassette"></div></div>
+      <div class="row"><div class="artist" data-text="ELIZA B.C."></div><div class="title" data-text="–"></div><div class="format" data-text="LP"></div></div>
+      <div class="row"><div class="artist" data-text="Thought Broadcast"></div><div class="title" data-text="Abduction"></div><div class="format" data-text="LP"></div></div>
+      <div class="row"><div class="artist" data-text="[..(].:"></div><div class="title" data-text="–"></div><div class="format" data-text="Cassette, Reissue"></div></div>
+      <div class="row"><div class="artist" data-text="cohabitant"></div><div class="title" data-text="–"></div><div class="format" data-text="Cassette, Reissue"></div></div>
+      <div class="row"><div class="artist" data-text="Agnes"></div><div class="title" data-text="–"></div><div class="format" data-text="LP"></div></div>
+      <div class="row"><div class="artist" data-text="Xth Réflexion"></div><div class="title" data-text="/\​\​05​-​06"></div><div class="format" data-text="x2 LP, Reissue"></div></div>
+      <div class="row"><div class="artist" data-text="[..(].:"></div><div class="title" data-text="–"></div><div class="format" data-text="Cassette"></div></div>
+      <div class="row"><div class="artist" data-text="cohabitant"></div><div class="title" data-text="–"></div><div class="format" data-text="Cassette"></div></div>
+
+      <!-- Centered contact row -->
+      <div class="row center-row">
+        <div class="artist"></div>
+        <div class="title" data-text="no@people - system.us   /   info@chainedlibrary.org"></div>
+        <div class="format"></div>
+      </div>
+
+      <!-- Centered location row -->
+      <div class="row center-row">
+        <div class="artist"></div>
+        <div class="title" data-text="Los Angeles"></div>
+        <div class="format"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom banner -->
+  <footer>
+    <img src="/Users/man/Desktop/bottom.png" alt="Bottom Banner" class="bottom-banner">
+  </footer>
+
+  <script>
+    function chaosText(text) {
+      return [...text].map(char => {
+        const spacing = Math.floor(Math.random() * 26) - 5; // –5px to +20px
+        return `<span class="char" style="margin-right:${spacing}px">${char}</span>`;
+      }).join('');
+    }
+
+    document.querySelectorAll('.row').forEach(row => {
+      // random black/white band
+      row.classList.add(Math.random() > 0.5 ? 'white' : 'black');
+
+      // apply chaotic spacing to any data-text elements
+      row.querySelectorAll('[data-text]').forEach(el => {
+        el.innerHTML = chaosText(el.getAttribute('data-text'));
+      });
+    });
+  </script>
+</body>
+</html>
